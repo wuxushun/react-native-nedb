@@ -1,0 +1,41 @@
+
+{
+  "name": "react-native-nedb",
+  "version": "1.0.0",
+  "description": "File-based embedded data store for react-native",
+  "author": {
+    "name": "mark wu",
+    "email": "564461904@qq.com"
+  },
+  "contributors": [
+    "Louis Chatriot",
+    "mark wu"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --timeout 10000"
+  },
+  "keywords": [
+    "database",
+    "datastore",
+    "embedded",
+    "react-native",
+    "nedb"
+  ],
+  "homepage": "https://github.com/wuxushun/react-native-nedb",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wuxushun/react-native-nedb.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.1",
+    "binary-search-tree": "^0.2.6",
+    "events": "1.1.0",
+    "underscore": "^1.9.1",
+    "util": "^0.11.1"
+  },
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
