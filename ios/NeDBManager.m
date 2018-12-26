@@ -35,15 +35,6 @@ RCT_EXPORT_METHOD(exists:(NSString *)filepath
   resolve([NSNumber numberWithBool:fileExists]);
 }
 
-RCT_EXPORT_METHOD(rename:(NSString *)filepath
-                  resolver:(RCTPromiseResolveBlock)resolve
-                  rejecter:(__unused RCTPromiseRejectBlock)reject)
-{
-  BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:[self getPrivatePath:filepath]];
-  
-  resolve([NSNumber numberWithBool:fileExists]);
-}
-
 RCT_EXPORT_METHOD(writeFile:(NSString *)filepath
                   contents:(NSString *)contents
                   options:(NSDictionary *)options
